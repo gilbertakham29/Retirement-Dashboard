@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Retirement Dashboard</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> 
+
+</head>
+<body>
+  <div style="display:grid;grid-template-columns: 100px 1fr;grid-gap:10px;padding: 4px;">
+    <div style="height: 100%; ">
+        <div style="width: 80px; margin-top:25%;justify-content: center; align-items: center; display: inline-flex">
+            <div style="  width: 20px; height: 20px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;bottom: 0;">
+               
+                  <img src="https://t4.ftcdn.net/jpg/02/92/69/47/360_F_292694732_vGRvp3A5Ty91svAQWkIgQt7eQIUaUXDG.jpg" style="width:50px;height:50px;"/>
+                <div style="width: 15px; height: 0.83px; border: 0.83px #D0D1D2 solid">
+                    <span class="material-symbols-outlined" style="padding:12px;color:#808080">search</span>
+                </div>
+            </div>
+        </div>
+        <div style="width: 80px; height: 55px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="flex: 1 1 0; align-self: stretch; padding-left: 10px; padding-right: 10px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+                <div style="width: 2px; height: 40px; transform: rotate(90deg); transform-origin: 0 0; background: linear-gradient(180deg, rgba(238, 236, 250, 0) 0%, #F9F9F9 51%, rgba(238, 236, 250, 0) 100%); border-radius: 18px">
+                  
+                </div>
+            </div>
+        </div>
+        <div style="width: 80px; height: 66px; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 40px; height: 40px; position: relative; border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <span class="material-icons" style="width: 2px; height: 24px; color:#808080">
+home
+</span>
+            </div>
+        </div>
+        <div style="width: 80px; height: 56px; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 40px; height: 90px; position: relative; border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <span class="material-icons" style="width: 2px; height: 24px; color:#808080" >newspaper</span>
+            </div>
+        </div>
+        <div style="width: 80px; height: 56px; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 40px; height: 90px; position: relative;border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <span class="material-icons" style="width: 2px; height: 24px; color:#808080">article</span>
+            </div>
+        </div>
+       <div style="width: 80px; height: 56px; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 40px; height: 90px; position: relative;border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <span class="material-icons" style="width: 2px; height: 24px;color:#808080">person</span>
+            </div>
+        </div>
+        <div style="height: 22px; padding-bottom: 300%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+            <div style="width: 2px; height: 40px; transform: rotate(90deg); transform-origin: 0 0; background: linear-gradient(180deg, rgba(238, 236, 250, 0) 0%, #F9F9F9 51%, rgba(238, 236, 250, 0) 100%); border-radius: 18px"></div>
+        </div>
+        <div style="padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: white; flex-direction: column; justify-content: center; align-items: center; display: flex">
+            <div style="align-self: stretch; padding: 2px; background: #F8F9FE; border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="padding: 13px; background: white; box-shadow: 0px 4px 8px rgba(50, 50, 71, 0.01); border-radius: 15px; border: 0.50px #F2F2F7 solid; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+                    
+                </div>
+              
+            
+                <div style="padding: 13px; border-radius: 15px; overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+                    <div style="width: 14px; height: 14px; position: relative">
+                        <div style="width: 11.67px; height: 11.67px; left: 1.17px; top: 1.17px; position: absolute;"><span class="material-icons"style="color:#808080">
+notifications
+</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 13px; border-radius: 15px; overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+                     <div style="width: 14px; height: 14px; position: relative">
+                        <div style="width: 11.67px; height: 11.67px; left: 1.17px; top: 1.17px; position: absolute;"><span class="material-icons" style="color:#808080">
+logout
+</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+                 
+
+       
+        <div style="padding-left: 20px; padding-right: 20px;padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+          
+            <div style="height:auto; width:50%;position: relative; border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+           
+        
+            <div style="width: 100%;
+    margin-left: 10px;
+    height: max-content;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;">
+
+                  <img src="https://d.newsweek.com/en/full/1848466/us-skateboarder-cory-juneau.jpg?w=1600&h=1600&q=88&f=b96cca9a405278a208ecce28210332b7" style="width:50px;height:50px;border-radius:50px;margin-top:2%"/>
+<div style="display:inline-block;flex-direction:column;justify-content:flex-start;align-items:flex-start;">
+   <p class="name" style="font-size:20px;margin-left:10px;margin-bottom:1px">Hi Mike,</p>
+               <p class="name" style="font-size:10px;margin-left:10px;color:#808080">welcome back</p>
+</div>
+
+
+            </div>
+ 
+              <div style=" display:flex;flex-direction:column;margin-top:50px;margin-bottom:50px;justify-content:flex-start;align-items:flex-start;">
+                <h4 style="font-family:sans-serif;margin-bottom:3px">Today</h4>
+              <p style="font-size:24px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">$19,982</p>
+              <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-bottom:3px">account balance</p>
+                <p style="font-size:18px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">$4000</p>
+              <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-bottom:3px">Year-to-date contributions</p>
+                <p style="font-size:18px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">$1892</p>
+              <p style="font-size:12px;font-family:sans-serif;color:#808080;">Total Interest</p>
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <button style="background-color: #0040ff;
+  border-radius: 8px;
+  border:1px solid;
+  width:100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;">I want to  <i class="fa fa-caret-down"></i></button>
+
+                </div>
+                
+                <div/>
+             <h4 style="font-family:sans-serif;margin-bottom:3px">Recent Transactions</h4>
+                <br/>
+              <p style="font-size:12px;font-family:sans-serif;color:#808080;">2020-08-07</p>
+              <p style="font-size:12px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">Withdrawal Transfer to Bank-XXX11</p>
+                <br/> <hr style="color:#f2f2f2"/>
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;">2020-07-21</p>
+              <p style="font-size:12px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">Withdrawal Transfer to Bank-XXX11</p>
+                <br/> <hr style="color:#f2f2f2"/>
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;">2020-07-16</p>
+              <p style="font-size:12px;font-family:sans-serif;font-weight:bold;margin-bottom:3px">Withdrawal Transfer to Bank-XXX11</p>
+                <br/> <hr style="color:#f2f2f2"/>
+            </div>
+        </div>
+        
+        </div>
+     <div style="height: initial; margin-left:5%;flex-direction: column;justify-content: flex-start; align-items: flex-start; display: flex">
+        
+            <div style="flex-direction: row; justify-content: flex-start; align-items: flex-start; display: flex">
+
+                  
+<div style="display:inline-block;flex-direction:column;justify-content:flex-start;align-items:flex-start; margin-bottom:25px;">
+   <p class="name" style="font-size:16px;margin-left:10px;font-family:sans-serif;color:#0040ff;margin-top:25px">Retirement Income</p>
+<p style="font-size:24px;font-family:sans-serif,arial;font-weight:bold;margin-bottom:3px">Starting Year 2056</p>
+     </div>
+
+
+            </div>
+                 
+
+       
+        <div style=" height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style=" position: relative; border-radius: 15px;grid-template-columns:repeat(3,1fr); flex-direction: row; justify-content: space-between; align-items: flex-start; display: grid">
+              
+              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:center;">
+             <p style="font-size:18px;font-family:sans-serif;font-weight:bold;margin-bottom:3px;margin-right:auto;">$300,000</p>
+              <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">My Goal</p>
+                 </div>
+              
+
+              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:center;">
+
+              <p style="font-size:18px;font-family:sans-serif;font-weight:bold;margin-bottom:3px;margin-right:auto;">59%</p>
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Goal Achieved</p>
+                   <hr style="color:#000000"/>
+                 </div>
+               <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:center;">
+
+              <p style="font-size:18px;font-family:sans-serif;font-weight:bold;margin-bottom:3px;margin-right:auto;">$300</p>
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Est. Monthly Income</p>
+                 </div>
+                          </div>
+          
+        </div>
+       <p class="name" style="font-size:16px;margin-right:auto;font-family:sans-serif;color:#0040ff;margin-top:10%">Contributions Overtime</p>
+        <div style=" height: 100%; padding-left: 25px; padding-right: 20px; flex-direction:row;  padding-bottom: 13px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="height: 40px; position: relative; border-radius: 15px;grid-template-columns:repeat(3,1fr); flex-direction: row; justify-content: flex-start; align-items: flex-start; display: grid">
+              
+              <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+                <p style="color:#0040ff">&#9679;</p>
+                            <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Employer:</p>
+             <p style="font-size:14px;font-family:sans-serif;font-weight:bold;margin-right:auto;">K 73,000</p>
+                 </div>
+              
+              <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+                               
+ <p style="color:#0040ff">&#9679;</p>
+
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Employee:</p>
+
+              <p style="font-size:14px;font-family:sans-serif;font-weight:bold;margin-right:auto;">K 52,000</p>
+                   <hr style="color:#000000"/>
+                 </div>
+               <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+ <p style="color:#0040ff">&#9679;</p>
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Total Interest:</p>
+
+              <p style="font-size:14px;font-family:sans-serif;font-weight:bold;margin-right:auto;">K 244,313</p>
+                 </div>
+                          </div>
+         
+        </div>
+<img style ="width:50%" src="https://i.stack.imgur.com/dloZt.png"/>
+         <p class="name" style="font-size:16px;margin-right:auto;font-family:sans-serif;color:#0040ff">How do I compare to my peers?</p>
+                        <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">These number represent the current goal achievement</p>
+
+        <div style=" height: 100%; padding-left: 25px; padding-right: 20px;  padding-bottom: 13px; justify-content: center; align-items: center; display: -webkit-inline-box;">
+            <div style="height: 40px; position: relative;grid-template-columns:repeat(1,1fr); flex-direction: row; justify-content: flex-start; align-items: flex-start; display: grid;">
+              
+              <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+                 <p style="font-size:12px;font-family:sans-serif;font-weight:bold;">Age: </p>
+                            <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Under 30</p>
+            <i class="fa fa-caret-down"></i>
+                 </div>
+              
+              <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+                               
+              <p style="font-size:12px;font-family:sans-serif;font-weight:bold;">Salary: </p>
+
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-left:auto;">K 20 - k 30</p>
+<i class="fa fa-caret-down" style="margin-left:10px;"></i>
+                 </div>
+               <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+                               <p style="font-size:12px;font-family:sans-serif;font-weight:bold;">Gender:</p>
+
+                 <p style="font-size:12px;font-family:sans-serif;color:#808080;margin-right:auto;">Female</p>
+<i class="fa fa-caret-down"></i>
+                 </div>
+              
+                          </div>
+         <div style="display:grid;grid-template-columns:100% 1fr;flex-direction:column;justify-content:flex-start;align-items:center;margin-left:10%">
+              <img src="https://cdn.sisense.com/wp-content/uploads/kb-a53e6811-2dce-473f-9bd1-b60159a075c7.png" style="width:35%;"/>
+          </div>
+
+
+        </div>
+                                    
+ 
+        </div>
+    <div style="display:flex;flex-direction:column;justify-content:flex-start;align-items:center;width: 50%;
+    height: 100%;
+    margin-top: 10%;">
+      <p class="name" style="font-size:18px;margin-left:10px;font-family:sans-serif;color:#000000;margin-top:25px">Retirement Strategy</p>
+            <p class="name" style="font-size:14px;margin-left:10px;font-weight:bold;font-family:serif;color:#000000;">Employee Contribution</p>
+      <div>
+       <input id="pi_input" type="range" min="0" max="100" step="number" />
+<label> <output id="value"></output></label>
+        </div>
+       <p class="name" style="font-size:14px;margin-left:10px;font-family:serif;color:#000000;">Retirement Age</p>
+      <div>
+       <input id="pi_input" type="range" min="0" max="100" step="number" />
+<label> <output id="value"></output></label>
+        <hr style="color:#D3D3D3"/>
+       
+        </div>
+       <div style="display:inline-flex;margin-top:20px">
+         <p class="name" style="font-size:14px;margin-right:50px;font-weight:bold;font-family:serif;color:#000000;">Employee Contribution</p>
+          <p style="font-size:14px;font-weight:bold;font-family:serif;color:#000000;">8.4%</p>
+        </div>
+       <div style="display:inline-flex;margin-top:5px">
+         <p class="name" style="font-size:14px;margin-right:100px;font-weight:bold;font-family:serif;color:#000000;">Interest Rate</p>
+          <p style="font-size:14px;font-weight:bold;font-family:serif;color:#000000;">5%</p>
+        </div>
+      <button style="background-color: #0040ff;
+  border-radius: 8px;
+  border:1px solid;
+  width:100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;">Update</button>
+
+      <div style="display:inline-flex;margin-top:5px;margin-bottom:10px">
+           <p class="name" style="font-size:14px;font-weight:bold;margin-right:5px;font-family:sans-serif;color:#0040ff;">View Docs</p>
+          <p style="font-size:14px;font-weight:bold;font-family:serif;color:#0040ff;"><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+        </div>
+      
+
+       <div style="display:inline-flex;margin-top:5px;flex-direction:row">
+         <div style="margin-top:15px">
+       <hr style=" border-left: 3px solid #0040ff;
+  height: 100%;margin-right:5px;"/>
+                </div>
+                <div style="display:inline-flex;margin-top:5px;flex-direction:column">
+
+                  <p class="name" style="font-size:14px;font-weight:light;font-family:serif;">Are you considering a </p>
+           <p class="name" style="font-size:14px;font-weight:bold;margin-right:5px;font-family:sans-serif;color:#000000;">Housing Advance?</p>
+               <p class="name" style="font-size:12px;font-weight:light;font-family:serif;color:gray">Limited time reduced interest</p>
+          <div style="display:inline-flex;margin-top:5px;margin-bottom:10px">
+           <p class="name" style="font-size:14px;font-weight:bold;margin-right:5px;font-family:sans-serif;color:#0040ff;">Learn More</p>
+          <p style="font-size:14px;font-weight:bold;font-family:serif;color:#0040ff;"><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+        </div>
+         </div>
+        </div>
+<div>
+ 
+  
+</div>
+ </div>
+    </div>
+    </div>
+    
+    </div>
+  
+ 
+<script>
+const value = document.querySelector("#value");
+const input = document.querySelector("#pi_input");
+value.textContent = input.value;
+input.addEventListener("input", (event) => {
+  value.textContent = event.target.value;
+});
+</script>
+</body>
+</html>
